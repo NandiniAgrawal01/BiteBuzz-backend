@@ -25,7 +25,7 @@ router.patch(
   "/order/:orderId/status",
   jwtCheck,
   jwtParse,
-//   MyRestaurantController.updateOrderStatus
+  MyRestaurantController.updateOrderStatus
 );
 
 router.get("/", jwtCheck, jwtParse, MyRestaurantController.getMyRestaurant);
